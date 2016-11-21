@@ -14,6 +14,7 @@
 		B70FB2CE1DE3B00B00FF57B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70FB2CC1DE3B00B00FF57B4 /* LaunchScreen.storyboard */; };
 		B70FB2D91DE3B00C00FF57B4 /* BestBuyBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70FB2D81DE3B00C00FF57B4 /* BestBuyBooksTests.swift */; };
 		B70FB2E41DE3B00C00FF57B4 /* BestBuyBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70FB2E31DE3B00C00FF57B4 /* BestBuyBooksUITests.swift */; };
+		B70FB2F21DE3B05900FF57B4 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70FB2F11DE3B05900FF57B4 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B70FB2DF1DE3B00C00FF57B4 /* BestBuyBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestBuyBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70FB2E31DE3B00C00FF57B4 /* BestBuyBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestBuyBooksUITests.swift; sourceTree = "<group>"; };
 		B70FB2E51DE3B00C00FF57B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B70FB2F11DE3B05900FF57B4 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B70FB2C31DE3B00B00FF57B4 /* AppDelegate.swift */,
 				B70FB2C51DE3B00B00FF57B4 /* ViewController.swift */,
 				B70FB2C71DE3B00B00FF57B4 /* Main.storyboard */,
+				B70FB2F11DE3B05900FF57B4 /* ViewController2.swift */,
 				B70FB2CA1DE3B00B00FF57B4 /* Assets.xcassets */,
 				B70FB2CC1DE3B00B00FF57B4 /* LaunchScreen.storyboard */,
 				B70FB2CF1DE3B00B00FF57B4 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				B70FB2C61DE3B00B00FF57B4 /* ViewController.swift in Sources */,
 				B70FB2C41DE3B00B00FF57B4 /* AppDelegate.swift in Sources */,
+				B70FB2F21DE3B05900FF57B4 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
