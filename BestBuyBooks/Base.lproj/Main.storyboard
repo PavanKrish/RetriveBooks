@@ -6,6 +6,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Search View Controller Scene-->
+        <scene sceneID="6aZ-0z-idx">
+            <objects>
+                <viewController id="pr0-O3-zwG" customClass="Search_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="miU-O2-w4D"/>
+                        <viewControllerLayoutGuide type="bottom" id="6iU-Wy-Ifz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XfM-d9-EbO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhB-A8-DyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-602" y="779"/>
+        </scene>
+        <!--Book Detail View Controller Scene-->
+        <scene sceneID="Vhg-2U-uwm">
+            <objects>
+                <viewController id="F2t-VD-tlo" customClass="Book_Detail_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l5w-rZ-iTC"/>
+                        <viewControllerLayoutGuide type="bottom" id="ghe-Lo-s0z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PjT-em-u7f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LoX-K5-Rvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="786"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -39,6 +75,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Result Table View Controller Scene-->
+        <scene sceneID="CBD-5I-Qmf">
+            <objects>
+                <viewController id="U52-Rx-40W" customClass="Result_Table_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Dz-yx-aoc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ceU-Ja-dkD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6uQ-Vb-sja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVe-mS-Dtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="776"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="W5e-qQ-f4Z">
+            <objects>
+                <viewController id="qtJ-4v-u4h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lo7-ym-lYX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZBJ-qa-RTU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zX9-Un-ntO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmA-Y6-kEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568" y="777"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="jgb-Xt-aiW">
