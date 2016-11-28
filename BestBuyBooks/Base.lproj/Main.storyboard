@@ -186,7 +186,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -287,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="853.60000000000002" y="775.86206896551732"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller Scene-->
         <scene sceneID="W5e-qQ-f4Z">
             <objects>
-                <viewController id="qtJ-4v-u4h" sceneMemberID="viewController">
+                <viewController id="qtJ-4v-u4h" customClass="Web_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lo7-ym-lYX"/>
                         <viewControllerLayoutGuide type="bottom" id="ZBJ-qa-RTU"/>
@@ -298,12 +298,19 @@
                     <view key="view" contentMode="scaleToFill" id="zX9-Un-ntO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBr-Yn-OdZ">
+                                <frame key="frameInset" minY="77" width="375" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmA-Y6-kEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1568" y="777"/>
+            <point key="canvasLocation" x="1567.2" y="776.76161919040487"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="jgb-Xt-aiW">
