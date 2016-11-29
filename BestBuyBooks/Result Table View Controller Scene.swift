@@ -9,6 +9,9 @@
 import UIKit
 
 class Result_Table_View_Controller_Scene: UIViewController {
+    
+    var arrayBook : NSMutableArray! = NSMutableArray()
+    var dataBook : Data!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,15 @@ class Result_Table_View_Controller_Scene: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return self.arrayBook.count
+    }
 
     /*
     // MARK: - Navigation

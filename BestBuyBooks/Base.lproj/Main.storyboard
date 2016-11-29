@@ -285,6 +285,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="U52-Rx-40W" id="ury-Xp-zzU"/>
+                                    <outlet property="delegate" destination="U52-Rx-40W" id="TbR-Iv-dc7"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
