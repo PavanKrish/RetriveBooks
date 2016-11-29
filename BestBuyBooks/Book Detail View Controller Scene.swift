@@ -10,6 +10,20 @@ import UIKit
 
 class Book_Detail_View_Controller_Scene: UIViewController {
 
+    @IBOutlet weak var ivBookCover: UIImageView!
+    
+    @IBOutlet weak var lbTitle: UILabel!
+    
+    @IBOutlet weak var lbAuthor: UILabel!
+    @IBOutlet weak var lbPublisher: UILabel!
+    
+    @IBOutlet weak var lbDescription: UITextView!
+    
+    @IBOutlet weak var btnApple: UIButton!
+    
+    @IBOutlet weak var btnGoogle: UIButton!
+    @IBOutlet weak var lbGooglePrice: UILabel!
+    @IBOutlet weak var lbApplePrice: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
