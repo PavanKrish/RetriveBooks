@@ -159,6 +159,9 @@
                                                         <frame key="frameInset" minX="83" minY="8" width="76" height="37"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="iTunes"/>
+                                                        <connections>
+                                                            <action selector="onAppleLink:" destination="F2t-VD-tlo" eventType="touchUpInside" id="KDn-cQ-4kU"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhZ-Da-0fA" userLabel="Lb Apple Price">
                                                         <frame key="frameInset" minX="189" minY="12" width="75" height="29"/>
@@ -182,6 +185,9 @@
                                                         <frame key="frameInset" minX="89" minY="8" width="76" height="37"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Play Store"/>
+                                                        <connections>
+                                                            <action selector="onGoogleLink:" destination="F2t-VD-tlo" eventType="touchUpInside" id="J9J-Li-hmt"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMv-QF-fcP" userLabel="Lb Google Price">
                                                         <frame key="frameInset" minX="205" minY="12" width="58" height="29"/>

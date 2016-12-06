@@ -57,8 +57,32 @@ class Book_Detail_View_Controller_Scene: UIViewController {
     }
 
 
+    @IBAction func onAppleLink(_ sender: AnyObject) {
+        if self.book.apple_link == "N/A"{
+            return;
+        }
+        
+        let url = URL(string: self.book.apple_link)!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
         // Do any additional setup after loading the view.
  
+    @IBAction func onGoogleLink(_ sender: AnyObject) {
+        if self.book.google_link == "N/A"{
+            return;
+        }
+        
+        let url = URL(string: self.book.google_link)!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
