@@ -44,9 +44,21 @@ class Book_Detail_View_Controller_Scene: UIViewController {
         self.lbAuthor.text = self.book.author
         self.lbPublisher.text = self.book.publisher
         self.lbDescription.text = self.book.descriptString
+        if self.book.imagelink == "N/A"{
+            self.ivBookCover.image = UIImage(named: "imagena.png")
+        }else{
+            let url = URL (string: self.book.imagelink)
+            self.ivBookCover.sd_setImage(with: url)
+        }
+        
+        self.lbApplePrice.text = self.book.apple_price
+        self.lbGooglePrice.text = self.book.google_price
+        
+    }
+
 
         // Do any additional setup after loading the view.
-    }
+ 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
