@@ -53,6 +53,21 @@ class Result_Table_View_Controller_Scene: UITableViewController {
         
         return cell
     }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let book1 = self.arrayBook.object(at: indexPath.row) as! BookObject
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Book_Detail_View_Controller_Scene") as! Book_Detail_View_Controller_Scene
+        vc.book = book1
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+
     /*
     // MARK: - Navigation
 
