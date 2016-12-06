@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -63,7 +64,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BookFindr.png" translatesAutoresizingMaskIntoConstraints="NO" id="KJb-PP-Wfa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Apple_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KJb-PP-Wfa">
                                 <frame key="frameInset" minX="76" minY="107" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -263,78 +264,92 @@
         <scene sceneID="CBD-5I-Qmf">
             <objects>
                 <viewController id="U52-Rx-40W" customClass="Result_Table_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4Dz-yx-aoc"/>
-                        <viewControllerLayoutGuide type="bottom" id="ceU-Ja-dkD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6uQ-Vb-sja">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="J0z-dp-pCv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="147" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PGD-Hg-1a2">
-                                <frame key="frameInset" minY="109" width="375" height="558"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookCell" rowHeight="147" id="6BV-hQ-5up">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="147"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6BV-hQ-5up" id="ygI-Pu-8rc">
-                                            <frame key="frameInset" width="375" height="147"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Y7-fz-ye0" userLabel="Iv Book Cover">
-                                                    <frame key="frameInset" minY="8" width="116" height="138"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxc-jf-pXA" userLabel="Lb Book Title">
-                                                    <frame key="frameInset" minX="124" minY="8" width="243" height="26"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SA-D3-nTS" userLabel="Lb Book Author">
-                                                    <frame key="frameInset" minX="124" minY="42" width="243" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDQ-c0-kOC" userLabel="Lb BookPublisher">
-                                                    <frame key="frameInset" minX="124" minY="74" width="243" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Apple_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zI0-zP-Ynf">
-                                                    <frame key="frameInset" minX="121" minY="109" width="44" height="37"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Google_Play_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nez-b3-6Q6">
-                                                    <frame key="frameInset" minX="172" minY="109" width="44" height="37"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="U52-Rx-40W" id="ury-Xp-zzU"/>
-                                    <outlet property="delegate" destination="U52-Rx-40W" id="TbR-Iv-dc7"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="150" id="k5g-9c-yOd" customClass="BookResultCell" customModule="BestBuyBooks" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k5g-9c-yOd" id="L8y-Jk-5j1">
+                                    <frame key="frameInset" width="375" height="149"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VMR-qZ-0QH">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="7GL-HC-hxL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v6-tV-wU1">
+                                            <frame key="frameInset" minX="115" minY="10" width="122" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipU-rc-COO">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvi-y6-lvM">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Kr-qJ-J3z">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="Wjn-0r-DHk"/>
+                                                <constraint firstAttribute="height" constant="30" id="aJM-lV-TP4"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google_Play_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="xGr-Si-nQB">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="IpN-xo-bwm"/>
+                                                <constraint firstAttribute="width" constant="30" id="ePs-4f-cTC"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a-smile_color.png" translatesAutoresizingMaskIntoConstraints="NO" id="BvJ-cH-eaI">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="N6O-XJ-7Qh"/>
+                                                <constraint firstAttribute="width" constant="30" id="Y3f-f3-dxW"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8Kr-qJ-J3z" firstAttribute="leading" secondItem="VMR-qZ-0QH" secondAttribute="trailing" constant="15" id="8Lt-Bn-ihv"/>
+                                        <constraint firstItem="BvJ-cH-eaI" firstAttribute="leading" secondItem="xGr-Si-nQB" secondAttribute="trailing" constant="5" id="99V-1e-1Zn"/>
+                                        <constraint firstItem="VMR-qZ-0QH" firstAttribute="leading" secondItem="L8y-Jk-5j1" secondAttribute="leading" constant="20" id="Fac-3h-sY9"/>
+                                        <constraint firstItem="VMR-qZ-0QH" firstAttribute="top" secondItem="L8y-Jk-5j1" secondAttribute="top" constant="10" id="Kdx-SS-50g"/>
+                                        <constraint firstItem="3v6-tV-wU1" firstAttribute="top" secondItem="L8y-Jk-5j1" secondAttribute="top" constant="10" id="M0a-HK-azl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BvJ-cH-eaI" secondAttribute="bottom" constant="10" id="NBE-W0-Xns"/>
+                                        <constraint firstItem="ipU-rc-COO" firstAttribute="leading" secondItem="VMR-qZ-0QH" secondAttribute="trailing" constant="15" id="Yed-nK-oFa"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="8Kr-qJ-J3z" secondAttribute="bottom" constant="10" id="ckV-Cv-9kn"/>
+                                        <constraint firstItem="xGr-Si-nQB" firstAttribute="leading" secondItem="8Kr-qJ-J3z" secondAttribute="trailing" constant="5" id="cpx-Kn-kyV"/>
+                                        <constraint firstItem="ipU-rc-COO" firstAttribute="top" secondItem="3v6-tV-wU1" secondAttribute="bottom" constant="5" id="e9E-zx-aDj"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xGr-Si-nQB" secondAttribute="bottom" constant="10" id="ewu-tH-L9h"/>
+                                        <constraint firstItem="3v6-tV-wU1" firstAttribute="leading" secondItem="VMR-qZ-0QH" secondAttribute="trailing" constant="15" id="ftn-rp-z8W"/>
+                                        <constraint firstItem="zvi-y6-lvM" firstAttribute="leading" secondItem="VMR-qZ-0QH" secondAttribute="trailing" constant="15" id="hN7-sW-sob"/>
+                                        <constraint firstAttribute="bottom" secondItem="VMR-qZ-0QH" secondAttribute="bottom" constant="10" id="kdh-PZ-oDW"/>
+                                        <constraint firstItem="zvi-y6-lvM" firstAttribute="top" secondItem="ipU-rc-COO" secondAttribute="bottom" constant="5" id="r6b-KY-H7P"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ivBookCover" destination="VMR-qZ-0QH" id="vRa-H1-Rxq"/>
+                                    <outlet property="lbBookAuthor" destination="ipU-rc-COO" id="bxu-tF-fhA"/>
+                                    <outlet property="lbBookPublisher" destination="zvi-y6-lvM" id="aTh-Lb-Sz8"/>
+                                    <outlet property="lbBookTitle" destination="3v6-tV-wU1" id="sXN-ty-aKB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
                     <connections>
                         <segue destination="F2t-VD-tlo" kind="show" id="1bM-YR-SPy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVe-mS-Dtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="779"/>
+            <point key="canvasLocation" x="100" y="778.56071964017997"/>
         </scene>
         <!--Web View Controller Scene-->
         <scene sceneID="W5e-qQ-f4Z">
@@ -382,7 +397,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="127"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j3h-Gv-Pqw" id="uEA-il-hb6">
-                                            <frame key="frameInset" width="375" height="127"/>
+                                            <frame key="frameInset" width="375" height="126"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Apple_logo" translatesAutoresizingMaskIntoConstraints="NO" id="oFD-2Z-Iqc">
@@ -408,7 +423,9 @@
     </scenes>
     <resources>
         <image name="Apple_logo" width="444" height="506"/>
-        <image name="BookFindr.png" width="444" height="506"/>
+        <image name="Apple_logo.png" width="2179" height="2288"/>
         <image name="Google_Play_logo" width="1042" height="1042"/>
+        <image name="Google_Play_logo.png" width="2179" height="2288"/>
+        <image name="a-smile_color.png" width="2179" height="2288"/>
     </resources>
 </document>
