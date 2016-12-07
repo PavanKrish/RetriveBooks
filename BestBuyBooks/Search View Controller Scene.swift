@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class Search_View_Controller_Scene: UIViewController {
 
@@ -39,6 +40,18 @@ class Search_View_Controller_Scene: UIViewController {
             
             return;
         }
+        
+        self.tfQuery.resignFirstResponder()
+        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            
+            var searchString:String = self.tfQuery.text!
+            searchString = searchString.replacingOccurrences(of: " ", with: "+")
+            let urlString = String(format:"https://www.googleapis.com/books/v1/volumes?q=%@&key=AIzaSyCg-cr3wsxUWjgZNSEzAsQHVqB3eZ97QFQ", searchString )
+            print(urlString);
+            let url = URL (string: urlString)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
