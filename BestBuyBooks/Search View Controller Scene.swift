@@ -53,6 +53,7 @@ class Search_View_Controller_Scene: UIViewController {
             print(urlString);
             let url = URL (string: urlString)
     }
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
