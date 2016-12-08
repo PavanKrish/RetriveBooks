@@ -44,7 +44,8 @@ class Result_Table_View_Controller_Scene: UITableViewController {
             cell.ivBookCover.image = UIImage(named: "imagena.png")
         }else{
             let url = URL (string: book1.imagelink)
-            cell.ivBookCover.sd_setImage(with: url)
+       
+            //cell.ivBookCover.sd_setImage(with: url)
         }
         
         cell.lbBookTitle.text = book1.title

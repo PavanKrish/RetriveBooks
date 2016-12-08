@@ -21,7 +21,7 @@ class Search_View_Controller_Scene: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBOutlet weak var onSubmit: UIButton!
+ 
     
     @IBAction func onSubmit(_ sender: AnyObject) {
         
