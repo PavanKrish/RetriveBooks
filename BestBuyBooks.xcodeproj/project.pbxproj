@@ -23,6 +23,7 @@
 		CE9E00A51DE616CC004B94C3 /* Result Table View Controller Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E00A41DE616CC004B94C3 /* Result Table View Controller Scene.swift */; };
 		CE9E00A71DE61742004B94C3 /* Book Detail View Controller Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E00A61DE61742004B94C3 /* Book Detail View Controller Scene.swift */; };
 		CE9E00A91DE61795004B94C3 /* Web View Controller Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E00A81DE61795004B94C3 /* Web View Controller Scene.swift */; };
+		CEE996BC1DF90ADB004E812E /* BookObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE996BB1DF90ADB004E812E /* BookObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CE9E00A41DE616CC004B94C3 /* Result Table View Controller Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result Table View Controller Scene.swift"; sourceTree = "<group>"; };
 		CE9E00A61DE61742004B94C3 /* Book Detail View Controller Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book Detail View Controller Scene.swift"; sourceTree = "<group>"; };
 		CE9E00A81DE61795004B94C3 /* Web View Controller Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Web View Controller Scene.swift"; sourceTree = "<group>"; };
+		CEE996BB1DF90ADB004E812E /* BookObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookObject.swift; sourceTree = "<group>"; };
 		F9F403FEB2088638ADBB45E6 /* Pods-BestBuyBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestBuyBooks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BestBuyBooks/Pods-BestBuyBooks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 				B70FB2C51DE3B00B00FF57B4 /* View Controller.swift */,
 				B70FB2C71DE3B00B00FF57B4 /* Main.storyboard */,
 				CE9E00A81DE61795004B94C3 /* Web View Controller Scene.swift */,
+				CEE996BB1DF90ADB004E812E /* BookObject.swift */,
 				CE9E00A61DE61742004B94C3 /* Book Detail View Controller Scene.swift */,
 				CE9E00A41DE616CC004B94C3 /* Result Table View Controller Scene.swift */,
 				CE1F88901DF672360011BE94 /* Book Result Cell.swift */,
@@ -465,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE996BC1DF90ADB004E812E /* BookObject.swift in Sources */,
 				CE9E00A31DE615E8004B94C3 /* Search View Controller Scene.swift in Sources */,
 				B70FB2C61DE3B00B00FF57B4 /* View Controller.swift in Sources */,
 				CE9E00A51DE616CC004B94C3 /* Result Table View Controller Scene.swift in Sources */,
