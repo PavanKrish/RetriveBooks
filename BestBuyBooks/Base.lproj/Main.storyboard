@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pr0-O3-zwG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uPo-Rt-t5n">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="pr0-O3-zwG" kind="show" id="Fsm-Zl-H93"/>
+                        <segue destination="pr0-O3-zwG" kind="relationship" relationship="rootViewController" id="8FO-WU-D6k"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32g-cd-1QQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -26,7 +26,7 @@
         <!--Search View Controller Scene-->
         <scene sceneID="6aZ-0z-idx">
             <objects>
-                <viewController id="pr0-O3-zwG" customClass="Search_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Search View Controller Scene" id="pr0-O3-zwG" customClass="Search_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="miU-O2-w4D"/>
                         <viewControllerLayoutGuide type="bottom" id="6iU-Wy-Ifz"/>
@@ -71,9 +71,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="stK-Ot-iq9"/>
                     <connections>
                         <outlet property="tfQuery" destination="ah7-hM-aK2" id="QR7-JG-dMZ"/>
-                        <segue destination="U52-Rx-40W" kind="show" id="4gh-1X-IIX"/>
+                        <segue destination="U52-Rx-40W" kind="show" identifier="ToResultTable" id="4gh-1X-IIX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhB-A8-DyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,7 +84,7 @@
         <!--Book Detail View Controller Scene-->
         <scene sceneID="Vhg-2U-uwm">
             <objects>
-                <viewController id="F2t-VD-tlo" customClass="Book_Detail_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Book Detail View Controller Scene" id="F2t-VD-tlo" customClass="Book_Detail_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l5w-rZ-iTC"/>
                         <viewControllerLayoutGuide type="bottom" id="ghe-Lo-s0z"/>
@@ -262,7 +263,7 @@
         <!--Result Table View Controller Scene-->
         <scene sceneID="CBD-5I-Qmf">
             <objects>
-                <viewController id="U52-Rx-40W" customClass="Result_Table_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Result_Table_View_Controller_Scene" id="U52-Rx-40W" customClass="Result_Table_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="J0z-dp-pCv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -347,7 +348,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="F2t-VD-tlo" kind="show" id="1bM-YR-SPy"/>
+                        <segue destination="F2t-VD-tlo" kind="show" identifier="ToResultTable" id="1bM-YR-SPy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVe-mS-Dtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,7 +358,7 @@
         <!--Web View Controller Scene-->
         <scene sceneID="W5e-qQ-f4Z">
             <objects>
-                <viewController id="qtJ-4v-u4h" customClass="Web_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Web View Controller Scene" id="qtJ-4v-u4h" customClass="Web_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lo7-ym-lYX"/>
                         <viewControllerLayoutGuide type="bottom" id="ZBJ-qa-RTU"/>

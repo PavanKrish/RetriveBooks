@@ -63,7 +63,7 @@ class Result_Table_View_Controller_Scene: UITableViewController {
         
         let book1 = self.arrayBook.object(at: indexPath.row) as! BookObject
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Book_Detail_View_Controller_Scene") as! Book_Detail_View_Controller_Scene
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Book Detail View Controller Scene") as! Book_Detail_View_Controller_Scene
         vc.book = book1
         self.navigationController?.pushViewController(vc, animated: true)
     }
