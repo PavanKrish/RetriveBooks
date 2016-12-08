@@ -32,44 +32,75 @@
                         <viewControllerLayoutGuide type="bottom" id="6iU-Wy-Ifz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XfM-d9-EbO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Your Search Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mir-dc-O4l">
-                                <frame key="frameInset" minX="60" minY="302" width="256" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mir-dc-O4l">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="N8g-RQ-VgE"/>
+                                    <constraint firstAttribute="height" constant="50" id="zGw-hU-uft"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter Your Search Here">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KJb-PP-Wfa">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Pm0-mw-bH7"/>
+                                    <constraint firstAttribute="width" constant="300" id="ZA4-9O-DFV"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="For Ex: Sherlock" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ah7-hM-aK2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="FNx-vN-euC"/>
+                                    <constraint firstAttribute="height" constant="50" id="cdb-gI-h6r"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yrw-fc-HMb">
-                                <frame key="frameInset" minX="60" minY="348" width="299" height="45"/>
+                                <frame key="frameInset" minX="117" minY="574" width="299" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="For Ex: Sherlock" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ah7-hM-aK2">
-                                        <frame key="frameInset" minX="8" width="215" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOP-DD-uq1">
-                                        <frame key="frameInset" minX="244" width="48" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Search"/>
-                                        <connections>
-                                            <action selector="onSubmit:" destination="pr0-O3-zwG" eventType="touchUpInside" id="Bv6-U5-mPB"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Apple_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KJb-PP-Wfa">
-                                <frame key="frameInset" minX="76" minY="107" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOP-DD-uq1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HNS-Zw-eex"/>
+                                    <constraint firstAttribute="width" constant="300" id="YO4-Fm-2fJ"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Search">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="20"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="onSubmit:" destination="pr0-O3-zwG" eventType="touchUpInside" id="Bv6-U5-mPB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mir-dc-O4l" firstAttribute="centerX" secondItem="XfM-d9-EbO" secondAttribute="centerX" id="K93-LZ-tLc"/>
+                            <constraint firstItem="mOP-DD-uq1" firstAttribute="top" secondItem="ah7-hM-aK2" secondAttribute="bottom" constant="20" id="LRu-TG-KCj"/>
+                            <constraint firstItem="mOP-DD-uq1" firstAttribute="top" secondItem="XfM-d9-EbO" secondAttribute="top" constant="610" id="LrJ-ii-ThW"/>
+                            <constraint firstItem="ah7-hM-aK2" firstAttribute="top" secondItem="mir-dc-O4l" secondAttribute="bottom" constant="10" id="YiI-7w-7aK"/>
+                            <constraint firstItem="mir-dc-O4l" firstAttribute="top" secondItem="KJb-PP-Wfa" secondAttribute="bottom" constant="40" id="ca5-0O-X8m"/>
+                            <constraint firstItem="mOP-DD-uq1" firstAttribute="centerX" secondItem="XfM-d9-EbO" secondAttribute="centerX" constant="18.5" id="ffa-Hd-eI4"/>
+                            <constraint firstItem="KJb-PP-Wfa" firstAttribute="centerX" secondItem="XfM-d9-EbO" secondAttribute="centerX" id="oqN-jy-jXR"/>
+                            <constraint firstItem="KJb-PP-Wfa" firstAttribute="top" secondItem="miU-O2-w4D" secondAttribute="bottom" constant="60" id="uFg-b7-hpH"/>
+                            <constraint firstItem="ah7-hM-aK2" firstAttribute="centerX" secondItem="XfM-d9-EbO" secondAttribute="centerX" id="xLB-7C-1ag"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="stK-Ot-iq9"/>
                     <connections>
@@ -79,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhB-A8-DyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-602.39999999999998" y="778.56071964017997"/>
+            <point key="canvasLocation" x="-572.65625" y="778.7109375"/>
         </scene>
         <!--Book Detail View Controller Scene-->
         <scene sceneID="Vhg-2U-uwm">
@@ -90,16 +121,14 @@
                         <viewControllerLayoutGuide type="bottom" id="ghe-Lo-s0z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PjT-em-u7f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDf-NL-HVU">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDf-NL-HVU">
                                 <frame key="frameInset" minX="8" minY="20" width="367" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EnN-hQ-akb">
+                                    <view contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EnN-hQ-akb">
                                         <frame key="frameInset" minX="8" minY="8" width="351" height="170"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bZw-ap-h7L" userLabel="Iv Book Cover">
                                                 <frame key="frameInset" minX="55" minY="8" width="240" height="128"/>
@@ -205,9 +234,19 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="EnN-hQ-akb" firstAttribute="centerX" secondItem="TDf-NL-HVU" secondAttribute="centerX" id="5Y9-ui-HIv"/>
+                                    <constraint firstItem="EnN-hQ-akb" firstAttribute="top" secondItem="TDf-NL-HVU" secondAttribute="top" constant="20" id="mZF-va-67g"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TDf-NL-HVU" firstAttribute="top" secondItem="PjT-em-u7f" secondAttribute="top" constant="10" id="4YT-wF-WG0"/>
+                            <constraint firstItem="TDf-NL-HVU" firstAttribute="centerX" secondItem="PjT-em-u7f" secondAttribute="centerX" constant="-192.5" id="5pw-cd-RkQ"/>
+                            <constraint firstItem="TDf-NL-HVU" firstAttribute="centerY" secondItem="PjT-em-u7f" secondAttribute="centerY" constant="-168.5" id="66Z-Gm-74S"/>
+                            <constraint firstItem="TDf-NL-HVU" firstAttribute="top" secondItem="PjT-em-u7f" secondAttribute="top" constant="15" id="bCf-Rb-yk1"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btnApple" destination="uhl-Oj-RUx" id="GBp-bs-O8G"/>
@@ -235,7 +274,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAu-Wj-DRf">
@@ -265,15 +304,15 @@
             <objects>
                 <viewController storyboardIdentifier="Result_Table_View_Controller_Scene" id="U52-Rx-40W" customClass="Result_Table_View_Controller_Scene" customModule="BestBuyBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="J0z-dp-pCv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="150" id="k5g-9c-yOd" customClass="BookResultCell" customModule="BestBuyBooks" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k5g-9c-yOd" id="L8y-Jk-5j1">
-                                    <frame key="frameInset" width="375" height="149"/>
+                                    <frame key="frameInset" width="768" height="149"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VMR-qZ-0QH">
@@ -364,7 +403,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZBJ-qa-RTU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zX9-Un-ntO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBr-Yn-OdZ">
@@ -392,7 +431,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HTy-MG-0Hb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qca-cf-VWL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pzd-zQ-TOF">
