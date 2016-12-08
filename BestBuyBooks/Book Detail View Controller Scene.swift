@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SDWebImage
+
 
 class Book_Detail_View_Controller_Scene: UIViewController {
     var book : BookObject!
