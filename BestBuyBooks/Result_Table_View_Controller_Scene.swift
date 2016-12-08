@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class Result_Table_View_Controller_Scene: UITableViewController {
     
@@ -45,7 +46,7 @@ class Result_Table_View_Controller_Scene: UITableViewController {
         }else{
             let url = URL (string: book1.imagelink)
        
-            //cell.ivBookCover.sd_setImage(with: url)
+            cell.ivBookCover.sd_setImage(with: url)
         }
         
         cell.lbBookTitle.text = book1.title

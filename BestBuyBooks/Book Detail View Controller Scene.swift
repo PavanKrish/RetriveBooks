@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class Book_Detail_View_Controller_Scene: UIViewController {
     var book : BookObject!
@@ -48,9 +49,7 @@ class Book_Detail_View_Controller_Scene: UIViewController {
             self.ivBookCover.image = UIImage(named: "imagena.png")
         }else{
             let url = URL (string: self.book.imagelink)
-            
-            // In this Line....!!!
-            //self.ivBookCover.sd_setImage(with: url)
+            self.ivBookCover.sd_setImage(with: url)
         }
         
         self.lbApplePrice.text = self.book.apple_price
