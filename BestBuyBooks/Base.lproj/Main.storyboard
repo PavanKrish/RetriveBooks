@@ -41,7 +41,7 @@
                                     <constraint firstAttribute="height" constant="50" id="wHq-43-v26"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Enter Your Search Here">
+                                    <fragment content="Enter Your Book name here">
                                         <attributes>
                                             <font key="NSFont" size="24" name=".SFNSDisplay-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
