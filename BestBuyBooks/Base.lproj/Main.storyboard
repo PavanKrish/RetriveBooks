@@ -61,7 +61,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="For Ex: Software Engineering" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ah7-hM-aK2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="For Ex: Software Engineering" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ah7-hM-aK2">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="339-6L-EcF"/>
                                     <constraint firstAttribute="width" constant="300" id="ZTo-dI-19y"/>
@@ -242,13 +242,11 @@
                                     <constraint firstItem="rJr-FD-rZv" firstAttribute="centerX" secondItem="TDf-NL-HVU" secondAttribute="centerX" id="1W6-xR-xcm"/>
                                     <constraint firstItem="rJr-FD-rZv" firstAttribute="centerX" secondItem="TDf-NL-HVU" secondAttribute="centerX" id="6Cl-W4-VKS"/>
                                     <constraint firstItem="EnN-hQ-akb" firstAttribute="top" secondItem="TDf-NL-HVU" secondAttribute="top" constant="40" id="6Hu-5Y-irg"/>
-                                    <constraint firstItem="EnN-hQ-akb" firstAttribute="top" secondItem="TDf-NL-HVU" secondAttribute="top" constant="30" id="6eY-Ma-DVN"/>
                                     <constraint firstItem="EnN-hQ-akb" firstAttribute="centerX" secondItem="TDf-NL-HVU" secondAttribute="centerX" id="UxU-s8-Far"/>
                                     <constraint firstItem="rJr-FD-rZv" firstAttribute="top" secondItem="oLx-1j-Rbu" secondAttribute="bottom" constant="90" id="XXd-gx-XxZ"/>
                                     <constraint firstItem="EnN-hQ-akb" firstAttribute="centerX" secondItem="TDf-NL-HVU" secondAttribute="centerX" id="g5G-Zq-Czb"/>
                                     <constraint firstItem="oLx-1j-Rbu" firstAttribute="centerX" secondItem="TDf-NL-HVU" secondAttribute="centerX" id="qlh-HP-RJY"/>
                                     <constraint firstItem="oLx-1j-Rbu" firstAttribute="top" secondItem="EnN-hQ-akb" secondAttribute="bottom" constant="5" id="uxU-vO-ZA2"/>
-                                    <constraint firstItem="EnN-hQ-akb" firstAttribute="top" secondItem="TDf-NL-HVU" secondAttribute="top" constant="20" id="yUA-iS-VvX"/>
                                 </constraints>
                             </view>
                         </subviews>
